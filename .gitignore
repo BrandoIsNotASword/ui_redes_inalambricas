@@ -29,4 +29,5 @@ $RECYCLE.BIN/
 
 node_modules/
 .tmp
-dist
+dist/*.js
+dist/*.scss
