@@ -8,6 +8,10 @@ module.exports = {
     './src/js/App.js'
   ],
 
+  eslint: {
+    configFile: './.eslintrc'
+  },
+
   cache: true,
 
   output: {
@@ -16,6 +20,11 @@ module.exports = {
   },
 
   module: {
+    preLoaders: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'eslint-loader'
+    }],
     loaders: [
       {
         test: /\.js$/,

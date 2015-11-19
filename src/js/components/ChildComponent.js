@@ -3,7 +3,11 @@ import { branch } from 'baobab-react/higher-order';
 import ChildComponentActions from '../actions/ChildComponentActions';
 import doge from '../../imgs/doge.jpg';
 
-class ChildComponent extends React.Component {
+const {
+  Component
+} = React;
+
+class ChildComponent extends Component {
   render() {
     const text = this.props.text;
 
@@ -22,10 +26,10 @@ class ChildComponent extends React.Component {
 
 export default branch(ChildComponent, {
   cursors: {
-    text: ['text'],
+    text: ['text']
   },
 
   actions: {
-    printText: ChildComponentActions.printText,
+    printText: ChildComponentActions.printText
   }
 });
