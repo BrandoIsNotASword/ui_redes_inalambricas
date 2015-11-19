@@ -11,11 +11,20 @@ module.exports = {
     filename: 'bundle.js'
   },
 
+  eslint: {
+    configFile: './.eslintrc'
+  },
+
   debug: false,
 
   devtool: false,
 
   module: {
+    preLoaders: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'eslint-loader'
+    }],
     loaders: [
       {
         test: /\.js?$/,
