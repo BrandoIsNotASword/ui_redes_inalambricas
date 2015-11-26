@@ -4,7 +4,7 @@ import tree from './tree';
 import { root } from 'baobab-react/higher-order';
 const { Component } = React;
 
-import ChildComponent from './components/ChildComponent';
+import Dashboard from './components/Dashboard';
 
 /* eslint-disable */
 import styles from '../styles/main.scss';
@@ -12,7 +12,7 @@ import styles from '../styles/main.scss';
 
 class App extends Component {
   render() {
-    return <ChildComponent />;
+    return <Dashboard />;
   }
 }
 

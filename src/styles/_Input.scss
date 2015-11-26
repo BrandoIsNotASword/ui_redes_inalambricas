@@ -1,0 +1,29 @@
+.Input {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 100px;
+  margin: 0.5em auto;
+  padding: .8em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Input__input {
+  background-color: transparent;
+  display: inline-block;
+  box-sizing: content-box;
+  border: none;
+  text-overflow: clip;
+  font-weight: $bold;
+  font-size: 1.25em;
+  width: 90%;
+}
+
+.Input__input:focus {
+  outline: 0;
+}
+
+.Input.Input--disabled {
+  opacity: 0.5;
+  cursor: default;
+}

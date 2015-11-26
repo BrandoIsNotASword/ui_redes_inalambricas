@@ -1,3 +1,39 @@
+$ubold: 900;
+$bold: 700;
+$normal: 400;
+
+$black: #424242;
+$white: #FFFFFF;
+
+@import url(https://fonts.googleapis.com/css?family=Lato:700,900,400);
+
+@import "normalize";
+@import "Input";
+@import "Dashboard";
+@import "Button";
+
 html {
-  background-color: green;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 14px;
+  color: $black;
+}
+
+html,
+body,
+#app,
+#app > div {
+  display: flex;
+  width: 100%;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }

@@ -1,10 +1,12 @@
 import Baobab from 'baobab';
 
 export default new Baobab({
-  text: 'React is up and running!',
-  doge: {
-    bark: 'Wow!'
-  }
+  redToggle: false,
+  greenToggle: false,
+  blueToggle: false,
+  lampToggle: false,
+  traffic: false,
+  twitterText: ''
 }, {
   shiftReferences: true,
   autoCommit: true

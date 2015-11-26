@@ -1,27 +1,75 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'start' ]
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'reeact-swipe',
+1 verbose cli   '--save' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
 4 verbose node symlink /usr/bin/node
-5 verbose run-script [ 'prestart', 'start', 'poststart' ]
-6 info prestart reepsy-webpack-react@0.0.0
-7 info start reepsy-webpack-react@0.0.0
-8 verbose unsafe-perm in lifecycle true
-9 info reepsy-webpack-react@0.0.0 Failed to exec start script
-10 error reepsy-webpack-react@0.0.0 start: `webpack-dev-server --content-base dist --hot --progress --colors`
-10 error Exit status 8
-11 error Failed at the reepsy-webpack-react@0.0.0 start script.
-11 error This is most likely a problem with the reepsy-webpack-react package,
-11 error not with npm itself.
-11 error Tell the author that this fails on your system:
-11 error     webpack-dev-server --content-base dist --hot --progress --colors
-11 error You can get their info via:
-11 error     npm owner ls reepsy-webpack-react
-11 error There is likely additional logging output above.
-12 error System Linux 3.11.0-15-generic
-13 error command "/usr/bin/node" "/usr/bin/npm" "run" "start"
-14 error cwd /home/brando/reepsy-webpack-react
-15 error node -v v0.10.32
-16 error npm -v 1.4.28
-17 error code ELIFECYCLE
-18 verbose exit [ 1, true ]
+5 warn package.json reepsy-webpack-react@0.0.0 No repository field.
+6 warn package.json reepsy-webpack-react@0.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'reeact-swipe', null ]
+9 verbose cache add name=undefined spec="reeact-swipe" args=["reeact-swipe",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'reeact-swipe',
+10 verbose parsed url   path: 'reeact-swipe',
+10 verbose parsed url   href: 'reeact-swipe' }
+11 silly lockFile f99cacfd-reeact-swipe reeact-swipe
+12 verbose lock reeact-swipe /home/brando/.npm/f99cacfd-reeact-swipe.lock
+13 silly lockFile f99cacfd-reeact-swipe reeact-swipe
+14 silly lockFile f99cacfd-reeact-swipe reeact-swipe
+15 verbose addNamed [ 'reeact-swipe', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile fb0012d7-reeact-swipe reeact-swipe@
+18 verbose lock reeact-swipe@ /home/brando/.npm/fb0012d7-reeact-swipe.lock
+19 silly addNameRange { name: 'reeact-swipe', range: '*', hasData: false }
+20 verbose request where is /reeact-swipe
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id 238fc72a06bc6dd1
+23 verbose url raw /reeact-swipe
+24 verbose url resolving [ 'https://registry.npmjs.org/', './reeact-swipe' ]
+25 verbose url resolved https://registry.npmjs.org/reeact-swipe
+26 verbose request where is https://registry.npmjs.org/reeact-swipe
+27 info trying registry request attempt 1 at 07:08:38
+28 http GET https://registry.npmjs.org/reeact-swipe
+29 http 404 https://registry.npmjs.org/reeact-swipe
+30 silly registry.get cb [ 404,
+30 silly registry.get   { 'content-type': 'application/json',
+30 silly registry.get     'cache-control': 'max-age=0',
+30 silly registry.get     'content-length': '2',
+30 silly registry.get     'accept-ranges': 'bytes',
+30 silly registry.get     date: 'Thu, 26 Nov 2015 15:08:39 GMT',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     age: '0',
+30 silly registry.get     connection: 'keep-alive',
+30 silly registry.get     'x-served-by': 'cache-atl6223-ATL',
+30 silly registry.get     'x-cache': 'MISS',
+30 silly registry.get     'x-cache-hits': '0',
+30 silly registry.get     'x-timer': 'S1448550519.314383,VS0,VE30' } ]
+31 silly lockFile fb0012d7-reeact-swipe reeact-swipe@
+32 silly lockFile fb0012d7-reeact-swipe reeact-swipe@
+33 error 404 Not Found
+33 error 404
+33 error 404 'reeact-swipe' is not in the npm registry.
+33 error 404 You should bug the author to publish it
+33 error 404 It was specified as a dependency of 'reepsy-webpack-react'
+33 error 404
+33 error 404 Note that you can also install from a
+33 error 404 tarball, folder, or http url, or git url.
+34 error System Linux 3.11.0-15-generic
+35 error command "/usr/bin/node" "/usr/bin/npm" "install" "reeact-swipe" "--save"
+36 error cwd /home/brando/san/reepsy-webpack-react
+37 error node -v v0.10.32
+38 error npm -v 1.4.28
+39 error code E404
+40 verbose exit [ 1, true ]
